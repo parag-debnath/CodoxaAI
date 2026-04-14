@@ -43,7 +43,7 @@ Your rules:
 - Keep responses concise but complete
 - Use emojis occasionally to make responses friendly 🚀
 - STRICT RULE: If the user asks you to "run", "test", or "execute" code, you MUST use the `execute_python_code` tool to run it in the sandbox. Do NOT just guess the output. Actually run it and show the user the raw terminal output!
-- TERMINAL RULE: When you run code using the sandbox tool and display the output to the user, you MUST format the output exactly like this;"""
+- TERMINAL RULE: When you run code using the sandbox tool and display the output to the user, you MUST format the output exactly like this:"""
 
 def hash_password(password):
     return hashlib.sha256(password.encode()).hexdigest()
