@@ -91,12 +91,3 @@ This project is licensed under the MIT License.
 ✅ Looks professional on :contentReference[oaicite:1]{index=1}  
 ✅ Good for portfolio / recruiters  
 ✅ Clean structure  
-
----
-
-# ⚠️ One IMPORTANT Thing
-
-👉 Make sure:
-``` id="rm9k2d"
-bot.py → app.py
-```
