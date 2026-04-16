@@ -250,7 +250,7 @@
 
   <div class="messages" id="messages">
     <div class="welcome" id="welcome">
-      <h1>&#x1F468;&#x200D;&#x1F4BB; CodoxAI</h1>
+     <h1 style="display: flex; align-items: center; justify-content: center;"><img src="/static/codox_logo.png" style="height: 40px; margin-right: 15px;" alt="Logo"> CodoxAI</h1>
       <p>Ask me anything about code!</p>
     </div>
   </div>
@@ -436,7 +436,7 @@ function newChat() {
   currentChatId = id;
   fetch('/new_chat', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ chat_id: id, title: 'New Chat' }) });
   renderChatList();
-  document.getElementById('messages').innerHTML = '<div class="welcome" id="welcome"><h1>CodoxAI</h1><p>Ask me anything about code!</p></div>';
+  document.getElementById('messages').innerHTML = '<div class="welcome" id="welcome"><h1 style="display: flex; align-items: center; justify-content: center;"><img src="/static/codox_logo.png" style="height: 40px; margin-right: 15px;" alt="Logo"> CodoxAI</h1><p>Ask me anything about code!</p></div>';
   closeSidebar();
 }
 
@@ -453,7 +453,7 @@ function deleteChat(id, e) {
   delete chats[id];
   if (currentChatId === id) {
     currentChatId = null;
-    document.getElementById('messages').innerHTML = '<div class="welcome" id="welcome"><h1>CodoxAI</h1><p>Ask me anything about code!</p></div>';
+   document.getElementById('messages').innerHTML = '<div class="welcome" id="welcome"><h1 style="display: flex; align-items: center; justify-content: center;"><img src="/static/codox_logo.png" style="height: 40px; margin-right: 15px;" alt="Logo"> CodoxAI</h1><p>Ask me anything about code!</p></div>';
   }
   renderChatList();
 }
