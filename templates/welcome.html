@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Welcome to CodoxAI</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Inter', sans-serif; }
+    
+    body {
+      /* Matching your exact app background! */
+      background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+      color: #ececec;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      text-align: center;
+      overflow-x: hidden;
+    }
+
+    /* Floating animation for the logo */
+    @keyframes float {
+      0% { transform: translateY(0px); }
+      50% { transform: translateY(-15px); }
+      100% { transform: translateY(0px); }
+    }
+
+    .hero-logo {
+      width: 120px;
+      height: auto;
+      margin-bottom: 24px;
+      animation: float 4s ease-in-out infinite;
+      filter: drop-shadow(0 0 15px rgba(76, 175, 80, 0.4));
+    }
+
+    h1 {
+      font-size: 3.5rem;
+      font-weight: 700;
+      margin-bottom: 16px;
+      background: linear-gradient(to right, #fff, #a78bfa);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    p {
+      font-size: 1.2rem;
+      color: #aaa;
+      max-width: 600px;
+      margin-bottom: 40px;
+      line-height: 1.6;
+    }
+
+    .cta-container {
+      display: flex;
+      gap: 20px;
+      justify-content: center;
+    }
+
+    /* The glowing hacker-green primary button */
+    .btn-primary {
+      background: #4CAF50;
+      color: #fff;
+      text-decoration: none;
+      padding: 14px 32px;
+      border-radius: 8px;
+      font-weight: 600;
+      font-size: 1.1rem;
+      transition: all 0.3s ease;
+      box-shadow: 0 0 15px rgba(76, 175, 80, 0.4);
+    }
+
+    .btn-primary:hover {
+      background: #45a049;
+      box-shadow: 0 0 25px rgba(76, 175, 80, 0.7);
+      transform: translateY(-2px);
+    }
+
+    /* The sleek secondary button */
+    .btn-secondary {
+      background: rgba(255, 255, 255, 0.1);
+      color: #fff;
+      text-decoration: none;
+      padding: 14px 32px;
+      border-radius: 8px;
+      font-weight: 600;
+      font-size: 1.1rem;
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      transition: all 0.3s ease;
+    }
+
+    .btn-secondary:hover {
+      background: rgba(255, 255, 255, 0.2);
+      transform: translateY(-2px);
+    }
+  </style>
+</head>
+<body>
+
+  <img src="/static/codox_logo.png" alt="CodoxAI Logo" class="hero-logo">
+  
+  <h1>CodoxAI</h1>
+  <p>The next-generation, AI-powered coding assistant built specifically for professional data analytics and modern software architecture.</p>
+  
+  <div class="cta-container">
+    <a href="/login" class="btn-primary">Get Started</a>
+    <a href="/login" class="btn-secondary">Login</a>
+  </div>
+
+</body>
+</html>
