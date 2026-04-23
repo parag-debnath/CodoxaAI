@@ -1,5 +1,5 @@
 ---
-title: CodoxaAI
+title: CodoxAI
 emoji: ⚡
 colorFrom: yellow
 colorTo: gray
