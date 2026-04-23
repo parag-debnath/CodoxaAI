@@ -85,10 +85,3 @@ This project is licensed under the MIT License.
 
 ---
 
-# 🔥 What This Does
-
-✅ Works with :contentReference[oaicite:0]{index=0}  
-✅ Looks professional on :contentReference[oaicite:1]{index=1}  
-✅ Good for portfolio / recruiters  
-✅ Clean structure  
-working now test
